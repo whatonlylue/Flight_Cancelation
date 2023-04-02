@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlightCal</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="header">
+        <h1>FlightCal</h1>
+        <div id="searchbar">
+        <form id="trackingform" method="get" >
+        
+          <input type="text" id="trackingnum"   placeholder="Tracking #...">
+          <button type="button" onclick="callTr()"><img class="search" src="search-interface-symbol.png"></button>
+        </form>
+        </div>
+    </div>
+    <div class="Bigbox">
+        <div id="trackinglist">
+            <table> 
+            <tr>
+            <th>Flight Numbers</th>
+            </tr>
+            <tr>
+              <td id="Plane1"></td>
+            </tr>
+            <tr>
+              <td id="Plane2"></td>
+            </tr>
+            <tr>
+              <td id="Plane3"></td>
+            </tr>
+            <tr>
+              <td id="Plane4"></td>
+            </tr>
+            <tr>
+              <td id="Plane5"></td>
+            </tr>
+            <tr>
+              <td id="Plane6"></td>
+            </tr>
+            <tr>
+              <td id="Plane7"></td>
+            </tr>
+            </table>
+        </div>
+        <div class="container">
+            <div class="box">
+                <div class="content">
+                    <img src="cloud.png">
+                    <b id="Weather" class="mine"></b> 
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <img src="stopwatch.png">
+                    <b id="Delay" class="mine"></b>
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                    <img src="calendar.png">
+                    <b id="Date" class="mine"></b> 
+                </div>
+            </div>
+            <div class="box">
+                <div class="content">
+                <b>Cancellation</b>
+                <b id="Cal"></b> 
+                </div>
+            </div>  
+            <div class="box">
+                <div class="content">
+                    <img src="offline.png">
+                    <b id="Connecting" class="mine"></b>
+                </div>
+            </div>
+                      
+        </div>
+    </div>
+    <script src="Flight_Calculation.js"></script>
+    
+</body>
+</html>
